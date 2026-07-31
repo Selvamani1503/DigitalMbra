@@ -184,7 +184,7 @@
         <!-- Theme Toggle -->
         <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
           <!-- Moon Icon (for light mode -> switch to dark) -->
-          <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
           <!-- Sun Icon (for dark mode -> switch to light) -->
           <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
         </button>
@@ -961,68 +961,184 @@
           <div class="contact-detail-item">
             <span class="detail-icon">💬</span>
             <div>
-              <div class="detail-lbl">WhatsApp / Phone</div>
-              <a href="https://wa.me/919500735874" class="detail-val" target="_blank">+91 95007 35874</a>
-            </div>
-          </div>
-
-          <div class="contact-detail-item">
-            <span class="detail-icon">📍</span>
-            <div>
-              <div class="detail-lbl">Location</div>
-              <div class="detail-val">Chennai, Tamil Nadu, India</div>
+              <div class="detail-lbl">Communication</div>
+              <span class="detail-val">Active Support via Zoom, Google Meet & Email</span>
             </div>
           </div>
         </div>
 
-        <div class="contact__pitch">
-          <h4>💡 Free 1-on-1 Marketing Audit</h4>
-          <p>Book a free 15-minute consultation to uncover budget leaks, keyword missed opportunities, and listing reinstatement options.</p>
+        <div class="contact__pitch border-glow">
+          <h4>💡 Did you know?</h4>
+          <p>Over 75% of local searches lead to a phone call or visit within 24 hours. If your maps listing is suspended or ranking below the top 3, you are losing leads daily. Let's fix it.</p>
         </div>
       </div>
 
-      <!-- Contact Form -->
       <div class="contact__form-wrapper reveal-right">
-        <h3 class="contact__form-title">Send Me a Message</h3>
+        <h3 class="contact__form-title">Send a Message</h3>
         <form class="contact-form" id="contactForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="contact-name">Your Name</label>
-              <input type="text" id="contact-name" name="name" class="form-input" placeholder="John Doe" required>
-            </div>
-            <div class="form-group">
-              <label for="contact-email">Email Address</label>
-              <input type="email" id="contact-email" name="email" class="form-input" placeholder="john@example.com" required>
-            </div>
+          <div class="form-group">
+            <label for="contactName">Full Name *</label>
+            <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. John Doe" required>
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="contact-phone">Phone Number</label>
-              <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="+91 98765 43210">
+              <label for="contactEmail">Email Address *</label>
+              <input type="email" id="contactEmail" name="email" class="form-input" placeholder="e.g. john@example.com" required>
             </div>
             <div class="form-group">
-              <label for="contact-service">Service Interested In</label>
-              <select id="contact-service" name="service" class="form-select">
-                <option value="Google Ads">Google Ads Campaign</option>
-                <option value="Meta Ads">Meta Ads (FB & Insta)</option>
-                <option value="Local SEO">Local SEO & Maps</option>
-                <option value="GBP Recovery">GBP Reinstatement</option>
-                <option value="Web Design">WordPress Web Design</option>
-                <option value="AI Services">AI Creative Services</option>
-                <option value="Other">Other / Full Strategy</option>
-              </select>
+              <label for="contactPhone">Phone Number *</label>
+              <div class="phone-input-wrapper">
+                <select id="contactCountryCode" class="form-input country-code-select" aria-label="Country Code">
+                  <option value="+91" selected>🇮🇳 +91 (India)</option>
+                  <option value="+1">🇺🇸 +1 (USA)</option>
+                  <option value="+44">🇬🇧 +44 (UK)</option>
+                  <option value="+971">🇦🇪 +971 (UAE)</option>
+                  <option value="+1">🇨🇦 +1 (Canada)</option>
+                  <option value="+61">🇦🇺 +61 (Australia)</option>
+                  <option value="+65">🇸🇬 +65 (Singapore)</option>
+                  <option value="+966">🇸🇦 +966 (Saudi Arabia)</option>
+                  <option value="+974">🇶🇦 +974 (Qatar)</option>
+                  <option value="+49">🇩🇪 +49 (Germany)</option>
+                  <option value="+33">🇫🇷 +33 (France)</option>
+                  <option value="+60">🇲🇾 +60 (Malaysia)</option>
+                  <option value="+93">🇦фом +93 (Afghanistan)</option>
+                  <option value="+355">🇦🇱 +355 (Albania)</option>
+                  <option value="+213">🇩🇿 +213 (Algeria)</option>
+                  <option value="+376">🇦🇩 +376 (Andorra)</option>
+                  <option value="+244">🇦🇴 +244 (Angola)</option>
+                  <option value="+54">🇦🇷 +54 (Argentina)</option>
+                  <option value="+374">🇦🇲 +374 (Armenia)</option>
+                  <option value="+43">🇦🇹 +43 (Austria)</option>
+                  <option value="+994">🇦🇿 +994 (Azerbaijan)</option>
+                  <option value="+973">🇧🇭 +973 (Bahrain)</option>
+                  <option value="+880">🇧🇩 +880 (Bangladesh)</option>
+                  <option value="+32">🇧🇪 +32 (Belgium)</option>
+                  <option value="+501">🇧ℤ +501 (Belize)</option>
+                  <option value="+229">🇧🇯 +229 (Benin)</option>
+                  <option value="+975">🇧🇹 +975 (Bhutan)</option>
+                  <option value="+591">🇧🇴 +591 (Bolivia)</option>
+                  <option value="+387">🇧🇦 +387 (Bosnia)</option>
+                  <option value="+267">🇧🇼 +267 (Botswana)</option>
+                  <option value="+55">🇧🇷 +55 (Brazil)</option>
+                  <option value="+673">🇧🇳 +673 (Brunei)</option>
+                  <option value="+359">🇧🇬 +359 (Bulgaria)</option>
+                  <option value="+855">🇰🇭 +855 (Cambodia)</option>
+                  <option value="+237">🇨🇲 +237 (Cameroon)</option>
+                  <option value="+56">🇨🇱 +56 (Chile)</option>
+                  <option value="+86">🇨🇳 +86 (China)</option>
+                  <option value="+57">🇨🇴 +57 (Colombia)</option>
+                  <option value="+506">🇨🇷 +506 (Costa Rica)</option>
+                  <option value="+385">🇭🇷 +385 (Croatia)</option>
+                  <option value="+53">🇨🇺 +53 (Cuba)</option>
+                  <option value="+357">🇨🇾 +357 (Cyprus)</option>
+                  <option value="+420">🇨🇿 +420 (Czech Rep)</option>
+                  <option value="+45">🇩🇰 +45 (Denmark)</option>
+                  <option value="+20">🇪🇬 +20 (Egypt)</option>
+                  <option value="+372">🇪🇪 +372 (Estonia)</option>
+                  <option value="+251">🇪🇹 +251 (Ethiopia)</option>
+                  <option value="+679">🇫🇯 +679 (Fiji)</option>
+                  <option value="+358">🇫🇮 +358 (Finland)</option>
+                  <option value="+995">🇬🇪 +995 (Georgia)</option>
+                  <option value="+233">🇬🇭 +233 (Ghana)</option>
+                  <option value="+30">🇬🇷 +30 (Greece)</option>
+                  <option value="+852">🇭🇰 +852 (Hong Kong)</option>
+                  <option value="+36">🇭🇺 +36 (Hungary)</option>
+                  <option value="+354">🇮🇸 +354 (Iceland)</option>
+                  <option value="+62">🇮🇩 +62 (Indonesia)</option>
+                  <option value="+98">🇮🇷 +98 (Iran)</option>
+                  <option value="+964">🇮🇶 +964 (Iraq)</option>
+                  <option value="+353">🇮🇪 +353 (Ireland)</option>
+                  <option value="+972">🇮🇱 +972 (Israel)</option>
+                  <option value="+39">🇮🇹 +39 (Italy)</option>
+                  <option value="+81">🇯🇵 +81 (Japan)</option>
+                  <option value="+962">🇯🇴 +962 (Jordan)</option>
+                  <option value="+7">🇰🇿 +7 (Kazakhstan)</option>
+                  <option value="+254">🇰🇪 +254 (Kenya)</option>
+                  <option value="+965">🇰🇼 +965 (Kuwait)</option>
+                  <option value="+856">🇱🇦 +856 (Laos)</option>
+                  <option value="+371">🇱🇻 +371 (Latvia)</option>
+                  <option value="+961">🇱🇧 +961 (Lebanon)</option>
+                  <option value="+370">🇱🇹 +370 (Lithuania)</option>
+                  <option value="+352">🇱🇺 +352 (Luxembourg)</option>
+                  <option value="+853">🇲🇴 +853 (Macao)</option>
+                  <option value="+265">🇲🇼 +265 (Malawi)</option>
+                  <option value="+960">🇲🇻 +960 (Maldives)</option>
+                  <option value="+356">🇲🇹 +356 (Malta)</option>
+                  <option value="+52">🇲🇽 +52 (Mexico)</option>
+                  <option value="+377">🇲🇨 +377 (Monaco)</option>
+                  <option value="+976">🇲🇳 +976 (Mongolia)</option>
+                  <option value="+212">🇲🇦 +212 (Morocco)</option>
+                  <option value="+95">🇲🇲 +95 (Myanmar)</option>
+                  <option value="+977">🇳🇵 +977 (Nepal)</option>
+                  <option value="+31">🇳🇱 +31 (Netherlands)</option>
+                  <option value="+64">🇳🇿 +64 (New Zealand)</option>
+                  <option value="+234">🇳🇬 +234 (Nigeria)</option>
+                  <option value="+47">🇳🇴 +47 (Norway)</option>
+                  <option value="+968">🇴🇲 +968 (Oman)</option>
+                  <option value="+92">🇵🇰 +92 (Pakistan)</option>
+                  <option value="+970">🇵🇸 +970 (Palestine)</option>
+                  <option value="+507">🇵🇦 +507 (Panama)</option>
+                  <option value="+51">🇵🇪 +51 (Peru)</option>
+                  <option value="+63">🇵🇭 +63 (Philippines)</option>
+                  <option value="+48">🇵🇱 +48 (Poland)</option>
+                  <option value="+351">🇵🇹 +351 (Portugal)</option>
+                  <option value="+40">🇷🇴 +40 (Romania)</option>
+                  <option value="+7">🇷🇺 +7 (Russia)</option>
+                  <option value="+381">🇷🇸 +381 (Serbia)</option>
+                  <option value="+421">🇸🇰 +421 (Slovakia)</option>
+                  <option value="+386">🇸🇮 +386 (Slovenia)</option>
+                  <option value="+27">🇿🇦 +27 (South Africa)</option>
+                  <option value="+82">🇰🇷 +82 (South Korea)</option>
+                  <option value="+34">🇪🇸 +34 (Spain)</option>
+                  <option value="+94">🇱🇰 +94 (Sri Lanka)</option>
+                  <option value="+46">🇸🇪 +46 (Sweden)</option>
+                  <option value="+41">🇨🇭 +41 (Switzerland)</option>
+                  <option value="+886">🇹🇼 +886 (Taiwan)</option>
+                  <option value="+66">🇹🇭 +66 (Thailand)</option>
+                  <option value="+90">🇹🇷 +90 (Turkey)</option>
+                  <option value="+380">🇺🇦 +380 (Ukraine)</option>
+                  <option value="+598">🇺🇾 +598 (Uruguay)</option>
+                  <option value="+58">🇻🇪 +58 (Venezuela)</option>
+                  <option value="+84">🇻🇳 +84 (Vietnam)</option>
+                  <option value="+967">🇾🇪 +967 (Yemen)</option>
+                  <option value="+260">🇿🇲 +260 (Zambia)</option>
+                  <option value="+263">🇿🇼 +263 (Zimbabwe)</option>
+                </select>
+                <input type="tel" id="contactPhone" name="phone" class="form-input" placeholder="e.g. 9876543210" required>
+              </div>
             </div>
           </div>
 
           <div class="form-group">
-            <label for="contact-message">Project Details or Questions</label>
-            <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Tell me about your business goals or campaign challenges..." required></textarea>
+            <label for="contactBusiness">Business Name</label>
+            <input type="text" id="contactBusiness" name="business" class="form-input" placeholder="e.g. ABC Landscaping">
           </div>
 
-          <button type="submit" class="btn btn-primary btn-block">Send Message →</button>
-          <div id="contactFormStatus" class="form-status"></div>
+          <div class="form-group">
+            <label for="contactService">Service Required *</label>
+            <select id="contactService" name="service" class="form-select" required>
+              <option value="" disabled selected>Select a Service...</option>
+              <option value="Google Ads">Google Ads Management</option>
+              <option value="Meta Ads">Meta Ads Management</option>
+              <option value="Local SEO">Local SEO Setup & Optimization</option>
+              <option value="GBP Reinstatement">GBP Reinstatement / Appeal Support</option>
+              <option value="Website Design">Website Design / Elementor Site</option>
+              <option value="AI Services">AI Services & Marketing Automation</option>
+              <option value="Consultation">Free Strategy Session</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage">Message *</label>
+            <textarea id="contactMessage" name="message" class="form-textarea" rows="4" placeholder="Describe your business and current marketing challenges..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="contactSubmit">
+            Let's Grow Your Business
+          </button>
         </form>
+        <div id="contactFormStatus" class="form-status"></div>
       </div>
     </div>
   </section>
@@ -1034,49 +1150,52 @@
         <a href="#" class="header__logo">
           <img src="images/profile-selvamani-suit.png" alt="Selvamani" class="header__logo-icon">
           <div class="header__logo-text">
-            <span class="header__logo-name text-white">Selvamani</span>
-            <span class="header__logo-tagline">Digital Marketing Specialist</span>
+            <span class="header__logo-name" style="color: var(--color-white-fixed)">Selvamani</span>
+            <span class="header__logo-tagline">Digital Specialist</span>
           </div>
         </a>
-        <p class="footer__desc">Helping businesses scale lead acquisition, search positions, Google Maps listings, and website conversions.</p>
+        <p class="footer__desc">Partnering with local service businesses and e-commerce brands to drive qualified inquiries, recover lost listings, and optimize ROI metrics.</p>
+        <button class="btn btn-primary btn-sm open-booking">Schedule Call</button>
       </div>
 
       <div class="footer__links-wrapper">
-        <div>
-          <h4 class="footer__heading">Navigation</h4>
-          <div class="footer__links">
+        <div class="footer__links-col">
+          <h5 class="footer__heading">Navigation</h5>
+          <nav class="footer__links">
             <a href="#hero">Home</a>
-            <a href="#about">About</a>
+            <a href="#about">About Me</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
+            <a href="#results">Results</a>
             <a href="#contact">Contact</a>
-          </div>
+          </nav>
         </div>
 
-        <div>
-          <h4 class="footer__heading">Services</h4>
-          <div class="footer__links">
-            <a href="#services">Google Ads</a>
-            <a href="#services">Meta Ads</a>
-            <a href="#services">Local SEO</a>
-            <a href="#services">GBP Recovery</a>
-            <a href="#services">Web Design</a>
-          </div>
+        <div class="footer__links-col">
+          <h5 class="footer__heading">Core Services</h5>
+          <nav class="footer__links">
+            <a href="#service-google-ads">Google Ads</a>
+            <a href="#service-meta-ads">Meta Ads</a>
+            <a href="#service-local-seo">Local SEO</a>
+            <a href="#service-gmb-recovery">GBP Reinstatement</a>
+            <a href="#service-web-development">Website Design</a>
+            <a href="#service-ai-services">AI Services</a>
+          </nav>
         </div>
 
-        <div>
-          <h4 class="footer__heading">Direct Contact</h4>
-          <div class="footer__contact-item">
-            <span>📍</span>
-            <div>Chennai, TN</div>
-          </div>
+        <div class="footer__links-col">
+          <h5 class="footer__heading">Support & Legal</h5>
+          <nav class="footer__links" style="margin-bottom: 12px;">
+            <a href="#" class="open-privacy">Privacy Policy</a>
+            <a href="#" class="open-terms">Terms of Service</a>
+          </nav>
           <div class="footer__contact-item">
             <span>✉</span>
-            <div>selvamax967@gmail.com</div>
+            <a href="mailto:selvamax967@gmail.com">selvamax967@gmail.com</a>
           </div>
           <div class="footer__contact-item">
-            <span>💬</span>
-            <div>+91 95007 35874</div>
+            <span>🕐</span>
+            <span>Response within 24 Hours</span>
           </div>
         </div>
       </div>
@@ -1084,50 +1203,40 @@
 
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <div class="footer__copy">
-          © <span id="currentYear">2026</span> Selvamani. All rights reserved. Built for conversion & performance.
-        </div>
+        <p class="footer__copy">Copyright &copy; 2026 Selvamani. All Rights Reserved.</p>
         <div class="footer__bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="#" id="openPrivacy" class="open-privacy">Privacy Policy</a>
+          <a href="#" id="openTerms" class="open-terms">Terms of Service</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- WhatsApp Floating Action Button -->
-  <a href="https://wa.me/919500735874?text=Hi%20Selvamani,%20I'd%20like%20to%20discuss%20a%20digital%20marketing%20strategy%20for%20my%20business." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-    <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.099 4.019 4.142-1.086zm11.026-6.623c-.279-.14-1.649-.814-1.904-.907-.256-.093-.443-.14-.629.14-.187.279-.723.907-.886 1.093-.163.186-.326.21-.605.07-.279-.14-1.177-.433-2.242-1.383-.829-.739-1.389-1.651-1.55-1.93-.163-.28-.018-.431.122-.57.126-.125.279-.326.419-.489.14-.163.186-.279.279-.465.093-.186.047-.349-.023-.489-.07-.14-.629-1.513-.862-2.07-.227-.542-.458-.469-.629-.478-.163-.008-.349-.008-.535-.008-.186 0-.489.07-.745.349-.256.279-.978.955-.978 2.33 0 1.375 1.001 2.702 1.141 2.888.14.186 1.968 3.006 4.767 4.218.667.288 1.188.46 1.594.588.669.212 1.278.182 1.758.11.536-.081 1.649-.674 1.882-1.326.233-.651.233-1.21.163-1.326-.07-.116-.256-.186-.535-.326z"/>
-    </svg>
-  </a>
+  <!-- Scroll Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
-  <!-- Back To Top Button -->
-  <button id="backToTop" class="back-to-top" aria-label="Back to Top">↑</button>
-
-  <!-- Interactive Consultation Booking Modal -->
-  <div id="bookingModal" class="booking-modal">
-    <div class="booking-modal__overlay" id="modalOverlay"></div>
+  <!-- Consultation Booking Modal (Google Calendar Integration) -->
+  <div class="booking-modal" id="bookingModal">
+    <div class="booking-modal__overlay" id="bookingOverlay"></div>
     <div class="booking-modal__container">
-      <button class="booking-modal__close" id="modalClose">✕</button>
-
+      <button class="booking-modal__close" id="bookingClose" aria-label="Close modal">✕</button>
+      
       <div class="booking-modal__header">
-        <span class="section-label">Free Discovery Session</span>
-        <h3 class="booking-modal__title">Book Your 1-on-1 Marketing Strategy Call</h3>
-        <p class="booking-modal__subtitle">Select your preferred date, time slot, and service focus to reserve a private consultation.</p>
+        <span class="section-label" style="margin-bottom: 8px;">Schedule Strategy Session</span>
+        <h2 class="booking-modal__title">Book Your Free <em>Consultation</em></h2>
+        <p class="booking-modal__subtitle">Select a date & time. The system will automatically construct a Google Calendar event with a Google Meet conference link.</p>
       </div>
 
-      <form id="bookingForm" class="booking-form">
-        <!-- STEP 1: Date & Slot Selection -->
+      <form class="booking-form" id="bookingForm">
+        <!-- Step 1: Date & Time -->
         <div class="booking-step" id="bookingStep1">
           <div class="booking-form__row">
-            <!-- Calendar Picker -->
             <div class="booking-form__group">
-              <label class="booking-form__label">1. Select Date (2026)</label>
-              <div class="booking-calendar">
+              <label class="booking-form__label">Select Date</label>
+              <div class="booking-calendar" id="bookingCalendar">
                 <div class="booking-calendar__header">
                   <button type="button" class="booking-calendar__nav" id="calPrev">‹</button>
-                  <span class="booking-calendar__month" id="calMonthYear">July 2026</span>
+                  <span class="booking-calendar__month" id="calMonth"></span>
                   <button type="button" class="booking-calendar__nav" id="calNext">›</button>
                 </div>
                 <div class="booking-calendar__days">
@@ -1137,92 +1246,249 @@
               </div>
             </div>
 
-            <!-- Time Slots -->
             <div class="booking-form__group">
-              <label class="booking-form__label">2. Select Time Slot</label>
-              <div class="booking-timeslots" id="timeslotGrid">
-                <div class="booking-timeslot" data-slot="10:00 AM">10:00 AM</div>
-                <div class="booking-timeslot" data-slot="11:30 AM">11:30 AM</div>
-                <div class="booking-timeslot" data-slot="02:00 PM">02:00 PM</div>
-                <div class="booking-timeslot" data-slot="03:30 PM">03:30 PM</div>
-                <div class="booking-timeslot" data-slot="05:00 PM">05:00 PM</div>
-                <div class="booking-timeslot" data-slot="06:30 PM">06:30 PM</div>
+              <label class="booking-form__label">Select Time</label>
+              <div class="booking-timeslots" id="timeSlots">
+                <button type="button" class="booking-timeslot" data-time="09:00">9:00 AM</button>
+                <button type="button" class="booking-timeslot" data-time="10:00">10:00 AM</button>
+                <button type="button" class="booking-timeslot" data-time="11:00">11:00 AM</button>
+                <button type="button" class="booking-timeslot" data-time="12:00">12:00 PM</button>
+                <button type="button" class="booking-timeslot" data-time="13:00">1:00 PM</button>
+                <button type="button" class="booking-timeslot" data-time="14:00">2:00 PM</button>
+                <button type="button" class="booking-timeslot" data-time="15:00">3:00 PM</button>
+                <button type="button" class="booking-timeslot" data-time="16:00">4:00 PM</button>
+                <button type="button" class="booking-timeslot" data-time="17:00">5:00 PM</button>
+                <button type="button" class="booking-timeslot" data-time="18:00">6:00 PM</button>
+                <button type="button" class="booking-timeslot" data-time="19:00">7:00 PM</button>
+                <button type="button" class="booking-timeslot" data-time="20:00">8:00 PM</button>
+                <button type="button" class="booking-timeslot" data-time="21:00">9:00 PM</button>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary booking-form__next" id="toStep2" disabled>Continue →</button>
+        </div>
+
+        <!-- Step 2: Client Info -->
+        <div class="booking-step booking-step--hidden" id="bookingStep2">
+          <button type="button" class="booking-form__back" id="backToStep1">← Back to Date & Time</button>
+          
+          <div class="booking-form__selected" id="selectedDateTime"></div>
+
+          <div class="booking-form__row">
+            <div class="booking-form__group">
+              <label class="booking-form__label" for="clientName">Full Name *</label>
+              <input type="text" id="clientName" class="booking-form__input" placeholder="e.g. John Doe" required>
+            </div>
+            <div class="booking-form__group">
+              <label class="booking-form__label" for="clientPhone">Phone Number *</label>
+              <div class="phone-input-wrapper">
+                <select id="clientCountryCode" class="booking-form__input country-code-select" aria-label="Country Code">
+                  <option value="+91" selected>🇮🇳 +91 (India)</option>
+                  <option value="+1">🇺🇸 +1 (USA)</option>
+                  <option value="+44">🇬🇧 +44 (UK)</option>
+                  <option value="+971">🇦🇪 +971 (UAE)</option>
+                  <option value="+1">🇨🇦 +1 (Canada)</option>
+                  <option value="+61">🇦🇺 +61 (Australia)</option>
+                  <option value="+65">🇸🇬 +65 (Singapore)</option>
+                  <option value="+966">🇸🇦 +966 (Saudi Arabia)</option>
+                  <option value="+974">🇶🇦 +974 (Qatar)</option>
+                  <option value="+49">🇩🇪 +49 (Germany)</option>
+                  <option value="+33">🇫🇷 +33 (France)</option>
+                  <option value="+60">🇲🇾 +60 (Malaysia)</option>
+                  <option value="+93">🇦🇫 +93 (Afghanistan)</option>
+                  <option value="+355">🇦🇱 +355 (Albania)</option>
+                  <option value="+213">🇩🇿 +213 (Algeria)</option>
+                  <option value="+376">🇦🇩 +376 (Andorra)</option>
+                  <option value="+244">🇦🇴 +244 (Angola)</option>
+                  <option value="+54">🇦🇷 +54 (Argentina)</option>
+                  <option value="+374">🇦🇲 +374 (Armenia)</option>
+                  <option value="+43">🇦🇹 +43 (Austria)</option>
+                  <option value="+994">🇦🇿 +994 (Azerbaijan)</option>
+                  <option value="+973">🇧🇭 +973 (Bahrain)</option>
+                  <option value="+880">🇧🇩 +880 (Bangladesh)</option>
+                  <option value="+32">🇧🇪 +32 (Belgium)</option>
+                  <option value="+501">🇧🇿 +501 (Belize)</option>
+                  <option value="+229">🇧🇯 +229 (Benin)</option>
+                  <option value="+975">🇧🇹 +975 (Bhutan)</option>
+                  <option value="+591">🇧🇴 +591 (Bolivia)</option>
+                  <option value="+387">🇧🇦 +387 (Bosnia)</option>
+                  <option value="+267">🇧🇼 +267 (Botswana)</option>
+                  <option value="+55">🇧🇷 +55 (Brazil)</option>
+                  <option value="+673">🇧🇳 +673 (Brunei)</option>
+                  <option value="+359">🇧🇬 +359 (Bulgaria)</option>
+                  <option value="+855">🇰🇭 +855 (Cambodia)</option>
+                  <option value="+237">🇨🇲 +237 (Cameroon)</option>
+                  <option value="+56">🇨🇱 +56 (Chile)</option>
+                  <option value="+86">🇨🇳 +86 (China)</option>
+                  <option value="+57">🇨🇴 +57 (Colombia)</option>
+                  <option value="+506">🇨🇷 +506 (Costa Rica)</option>
+                  <option value="+385">🇭🇷 +385 (Croatia)</option>
+                  <option value="+53">🇨🇺 +53 (Cuba)</option>
+                  <option value="+357">🇨🇾 +357 (Cyprus)</option>
+                  <option value="+420">🇨🇿 +420 (Czech Rep)</option>
+                  <option value="+45">🇩🇰 +45 (Denmark)</option>
+                  <option value="+20">🇪🇬 +20 (Egypt)</option>
+                  <option value="+372">🇪🇪 +372 (Estonia)</option>
+                  <option value="+251">🇪🇹 +251 (Ethiopia)</option>
+                  <option value="+679">🇫iji +679 (Fiji)</option>
+                  <option value="+358">🇫🇮 +358 (Finland)</option>
+                  <option value="+995">🇬🇪 +995 (Georgia)</option>
+                  <option value="+233">🇬🇭 +233 (Ghana)</option>
+                  <option value="+30">🇬🇷 +30 (Greece)</option>
+                  <option value="+852">🇭🇰 +852 (Hong Kong)</option>
+                  <option value="+36">🇭🇺 +36 (Hungary)</option>
+                  <option value="+354">🇮🇸 +354 (Iceland)</option>
+                  <option value="+62">🇮🇩 +62 (Indonesia)</option>
+                  <option value="+98">🇮🇷 +98 (Iran)</option>
+                  <option value="+964">🇮🇶 +964 (Iraq)</option>
+                  <option value="+353">🇮🇪 +353 (Ireland)</option>
+                  <option value="+972">🇮🇱 +972 (Israel)</option>
+                  <option value="+39">🇮🇹 +39 (Italy)</option>
+                  <option value="+81">🇯🇵 +81 (Japan)</option>
+                  <option value="+962">🇯🇴 +962 (Jordan)</option>
+                  <option value="+7">🇰🇿 +7 (Kazakhstan)</option>
+                  <option value="+254">🇰🇪 +254 (Kenya)</option>
+                  <option value="+965">🇰🇼 +965 (Kuwait)</option>
+                  <option value="+856">🇱🇦 +856 (Laos)</option>
+                  <option value="+371">🇱🇻 +371 (Latvia)</option>
+                  <option value="+961">🇱🇧 +961 (Lebanon)</option>
+                  <option value="+370">🇱🇹 +370 (Lithuania)</option>
+                  <option value="+352">🇱🇺 +352 (Luxembourg)</option>
+                  <option value="+853">🇲🇴 +853 (Macao)</option>
+                  <option value="+265">🇲🇼 +265 (Malawi)</option>
+                  <option value="+960">🇲🇻 +960 (Maldives)</option>
+                  <option value="+356">🇲🇹 +356 (Malta)</option>
+                  <option value="+52">🇲🇽 +52 (Mexico)</option>
+                  <option value="+377">🇲🇨 +377 (Monaco)</option>
+                  <option value="+976">🇲🇳 +976 (Mongolia)</option>
+                  <option value="+212">🇲🇦 +212 (Morocco)</option>
+                  <option value="+95">🇲🇲 +95 (Myanmar)</option>
+                  <option value="+977">🇳🇵 +977 (Nepal)</option>
+                  <option value="+31">🇳🇱 +31 (Netherlands)</option>
+                  <option value="+64">🇳🇿 +64 (New Zealand)</option>
+                  <option value="+234">🇳🇬 +234 (Nigeria)</option>
+                  <option value="+47">🇳🇴 +47 (Norway)</option>
+                  <option value="+968">🇴🇲 +968 (Oman)</option>
+                  <option value="+92">🇵🇰 +92 (Pakistan)</option>
+                  <option value="+970">🇵🇸 +970 (Palestine)</option>
+                  <option value="+507">🇵🇦 +507 (Panama)</option>
+                  <option value="+51">🇵🇪 +51 (Peru)</option>
+                  <option value="+63">🇵🇭 +63 (Philippines)</option>
+                  <option value="+48">🇵🇱 +48 (Poland)</option>
+                  <option value="+351">🇵🇹 +351 (Portugal)</option>
+                  <option value="+40">🇷🇴 +40 (Romania)</option>
+                  <option value="+7">🇷🇺 +7 (Russia)</option>
+                  <option value="+381">🇷🇸 +381 (Serbia)</option>
+                  <option value="+421">🇸🇰 +421 (Slovakia)</option>
+                  <option value="+386">🇸🇮 +386 (Slovenia)</option>
+                  <option value="+27">🇿🇦 +27 (South Africa)</option>
+                  <option value="+82">🇰🇷 +82 (South Korea)</option>
+                  <option value="+34">🇪🇸 +34 (Spain)</option>
+                  <option value="+94">🇱🇰 +94 (Sri Lanka)</option>
+                  <option value="+46">🇸🇪 +46 (Sweden)</option>
+                  <option value="+41">🇨🇭 +41 (Switzerland)</option>
+                  <option value="+886">🇹🇼 +886 (Taiwan)</option>
+                  <option value="+66">🇹🇭 +66 (Thailand)</option>
+                  <option value="+90">🇹🇷 +90 (Turkey)</option>
+                  <option value="+380">🇺🇦 +380 (Ukraine)</option>
+                  <option value="+598">🇺🇾 +598 (Uruguay)</option>
+                  <option value="+58">🇻🇪 +58 (Venezuela)</option>
+                  <option value="+84">🇻🇳 +84 (Vietnam)</option>
+                  <option value="+967">🇾🇪 +967 (Yemen)</option>
+                  <option value="+260">🇿🇲 +260 (Zambia)</option>
+                  <option value="+263">🇿🇼 +263 (Zimbabwe)</option>
+                </select>
+                <input type="tel" id="clientPhone" class="booking-form__input" placeholder="e.g. 9876543210" required>
               </div>
             </div>
           </div>
 
-          <div class="booking-actions">
-            <button type="button" class="btn btn-primary" id="step1Next" disabled>Continue to Details →</button>
-          </div>
-        </div>
-
-        <!-- STEP 2: Client Info -->
-        <div class="booking-step booking-step--hidden" id="bookingStep2">
-          <div class="booking-summary-box">
-            <div class="booking-summary-row">
-              <span class="booking-summary-label">Selected Date:</span>
-              <span class="booking-summary-val" id="summaryDate">-</span>
-            </div>
-            <div class="booking-summary-row">
-              <span class="booking-summary-label">Selected Time:</span>
-              <span class="booking-summary-val" id="summaryTime">-</span>
-            </div>
+          <div class="booking-form__group">
+            <label class="booking-form__label" for="clientEmail">Email Address (Gmail) *</label>
+            <input type="email" id="clientEmail" class="booking-form__input" placeholder="e.g. john@gmail.com" required>
           </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="book-name">Your Full Name</label>
-              <input type="text" id="book-name" class="form-input" placeholder="Selvamani" required>
-            </div>
-            <div class="form-group">
-              <label for="book-email">Email Address</label>
-              <input type="email" id="book-email" class="form-input" placeholder="selvamax967@gmail.com" required>
-            </div>
+          <div class="booking-form__group">
+            <label class="booking-form__label" for="serviceType">Service Required</label>
+            <select id="serviceType" class="booking-form__input booking-form__select">
+              <option value="Google Ads Management">Google Ads Management</option>
+              <option value="Meta Ads Management">Meta Ads Management</option>
+              <option value="Local SEO & GBP Setup">Local SEO & GBP Setup</option>
+              <option value="Google Business Profile Reinstatement">Google Business Profile Reinstatement</option>
+              <option value="WordPress Website Design">WordPress Website Design</option>
+              <option value="AI Services & Marketing Automation">AI Services & Marketing Automation</option>
+              <option value="General Consultation">Free Strategy Session</option>
+            </select>
           </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="book-phone">WhatsApp / Phone</label>
-              <input type="tel" id="book-phone" class="form-input" placeholder="+91 95007 35874" required>
-            </div>
-            <div class="form-group">
-              <label for="book-service">Primary Goal / Service</label>
-              <select id="book-service" class="form-select">
-                <option value="Google Ads">Google Ads Setup & Audit</option>
-                <option value="Meta Ads">Meta Ads Scaling</option>
-                <option value="Local SEO">Local Maps Ranking</option>
-                <option value="GBP Recovery">Google Profile Reinstatement</option>
-                <option value="Web Design">Website Development</option>
-                <option value="AI Services">AI Creative Services</option>
-              </select>
-            </div>
+          <div class="booking-form__group">
+            <label class="booking-form__label" for="clientMessage">Describe Your Business & Strategy Goals</label>
+            <textarea id="clientMessage" class="booking-form__input booking-form__textarea" rows="3" placeholder="Let me know how I can help you scale your business..."></textarea>
           </div>
 
-          <div class="form-group">
-            <label for="book-message">Business Website or Brief Note (Optional)</label>
-            <textarea id="book-message" class="form-textarea" rows="2" placeholder="e.g. www.mybusiness.com or specific questions..."></textarea>
-          </div>
-
-          <div class="booking-actions">
-            <button type="button" class="btn btn-outline" id="step2Back">← Back</button>
-            <button type="submit" class="btn btn-primary">Confirm & Book Slot ✓</button>
-          </div>
-        </div>
-
-        <!-- STEP 3: Confirmation Screen -->
-        <div class="booking-step booking-step--hidden" id="bookingStep3">
-          <div class="booking-success-view">
-            <div class="booking-success-icon">✓</div>
-            <h4 class="booking-success-title">Consultation Reserved Successfully!</h4>
-            <p class="booking-success-desc">Thank you! Your discovery call is scheduled. A confirmation email and calendar invitation have been registered.</p>
-            <button type="button" class="btn btn-primary" id="bookingFinish">Done</button>
-          </div>
+          <button type="submit" class="btn btn-primary booking-form__submit" id="bookingSubmit">
+            <span id="submitText">Schedule Strategy Session via Calendar</span>
+            <span id="submitLoader" style="display:none;">Scheduling...</span>
+          </button>
+          
+          <p class="booking-form__note">📅 This creates a Google Calendar event. Please make sure to save it. Both you and I will receive confirmation emails.</p>
         </div>
       </form>
+
+      <!-- Step 3: Success -->
+      <div class="booking-step booking-step--hidden" id="bookingStep3">
+        <div class="booking-success">
+          <div class="booking-success__icon">✓</div>
+          <h3 class="booking-success__title">Meeting Formatted!</h3>
+          <p class="booking-success__text">We have prepared the Google Calendar event details. Ensure you complete the event creation on the next screen.</p>
+          <div class="booking-success__details" id="successDetails"></div>
+          <button type="button" class="btn btn-primary" id="bookingDone">Close</button>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Scripts -->
+  <!-- Privacy Policy Modal -->
+  <div class="booking-modal" id="privacyModal">
+    <div class="booking-modal__overlay" id="privacyOverlay"></div>
+    <div class="booking-modal__container" style="max-width: 600px;">
+      <button class="booking-modal__close" id="privacyClose" aria-label="Close modal">✕</button>
+      <div class="booking-modal__header">
+        <span class="section-label" style="margin-bottom: 8px;">Legal</span>
+        <h2 class="booking-modal__title">Privacy <em>Policy</em></h2>
+      </div>
+      <div style="font-size: 0.92rem; line-height: 1.6; color: var(--text-secondary); max-height: 400px; overflow-y: auto; padding-right: 10px;">
+        <p><strong>1. Introduction & Overview</strong><br>Welcome to Selvamani's Digital Specialist Portfolio. We are dedicated to respecting and safeguarding your personal information. This Privacy Policy clarifies how we gather, process, retain, and protect the data you share when requesting strategies, filling out inquiry forms, or booking consultations.</p>
+        <p><strong>2. Information We Collect</strong><br>We only collect personal identification parameters that you submit directly and voluntarily. This includes your full name, business email address, phone number, website URLs, active marketing budgets, and custom business goals. Additionally, our server logs may automatically record basic browsing parameters (IP address, browser version, and page load statistics) for technical optimization.</p>
+        <p><strong>3. Processing Purposes & Methods</strong><br>We process your inputs strictly to schedule marketing consultation requests, construct formatted Google Calendar invites (including automated Google Meet links), and reply to campaign audit queries. All data inputs are processed manually and kept strictly confidential.</p>
+        <p><strong>4. Data Protection & Storage Limits</strong><br>We implement standard firewall protocols, secure server configurations, and encryption controls to prevent unauthorized data loss, alteration, or breaches. We retain your contact information only as long as necessary to complete your strategy review and coordinate prospective partnerships.</p>
+        <p><strong>5. Information Disclosure Policy</strong><br>We enforce a strict zero-sharing policy. We do not sell, license, trade, rent, or lease your private parameters to any third-party marketing companies, agencies, or external service vendors.</p>
+        <p><strong>6. Browser Cookie Preferences</strong><br>This website uses local browser storage options exclusively to remember your visual aesthetic settings, specifically persisting your chosen theme mode toggle (light mode or dark mode).</p>
+        <p><strong>7. Right to Correction or Deletion</strong><br>You hold complete authority over your personal information. You can request access, corrections, or immediate removal of your details from our records by reaching out directly to <a href="mailto:selvamax967@gmail.com" style="color: var(--accent-color); text-decoration: underline;">selvamax967@gmail.com</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms of Service Modal -->
+  <div class="booking-modal" id="termsModal">
+    <div class="booking-modal__overlay" id="termsOverlay"></div>
+    <div class="booking-modal__container" style="max-width: 600px;">
+      <button class="booking-modal__close" id="termsClose" aria-label="Close modal">✕</button>
+      <div class="booking-modal__header">
+        <span class="section-label" style="margin-bottom: 8px;">Legal</span>
+        <h2 class="booking-modal__title">Terms of <em>Service</em></h2>
+      </div>
+      <div style="font-size: 0.92rem; line-height: 1.6; color: var(--text-secondary); max-height: 400px; overflow-y: auto; padding-right: 10px;">
+        <p><strong>1. Binding Agreement Terms</strong><br>By exploring and interacting with this website, you explicitly agree to align with and be legally bound by these Terms of Service, along with our Privacy Policy. If you object to any portion of these conditions, you must immediately terminate use of our website and services.</p>
+        <p><strong>2. Fair Usage Policy</strong><br>You are permitted to use our contact elements, inquiry forms, and booking calendar exclusively to request authentic digital marketing audits, GBP reinstatements, and professional campaigns. Submitting spam content, artificial lead parameters, malicious scripts, or attempting unauthorized portal scraping is strictly prohibited.</p>
+        <p><strong>3. Intellectual Property Rights</strong><br>All custom graphics, logo variations, campaign results dashboards, case study reviews, code patterns, and presentation copy displayed on this site are the protected intellectual property of Selvamani. Re-publishing, distributing, copying, or duplicating any assets without prior written consent is forbidden.</p>
+        <p><strong>4. Performance Marketing Disclaimers</strong><br>Case studies, ROAS results, CPC achievements, and campaign metrics represent past strategy success for specific niches and budgets. We make no guarantee that you will achieve identical leads or conversions. Marketing results depend on real-time bid competition, client sales funnels, and search engine algorithm updates.</p>
+        <p><strong>5. Limitation of Financial Liability</strong><br>Under no circumstances shall Selvamani be held liable for any direct, indirect, special, or consequential loss, cost, or damage resulting from the deployment of consulting suggestions or campaign setups. Ad spend is paid directly to advertising platforms (Google Ads, Meta Ads) and is non-refundable.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
