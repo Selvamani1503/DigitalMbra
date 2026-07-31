@@ -50,13 +50,10 @@ export default function CustomCursor() {
           transform: 'translate(-50%, -50%)',
         }}
       />
-
-      {/* Outer Smooth Ring */}
+      {/* Outer Glow Halo */}
       <div
-        className={`fixed rounded-full border transition-all duration-300 ease-out ${
-          isPointer
-            ? 'w-12 h-12 border-dental-mint/60 bg-dental-mint/10 scale-125'
-            : 'w-8 h-8 border-dental-blue/40 bg-dental-blue/5'
+        className={`fixed rounded-full border border-dental-blue/40 bg-dental-blue/5 backdrop-blur-xs transition-all duration-200 ${
+          isPointer ? 'w-12 h-12 border-dental-mint/60 bg-dental-mint/10' : 'w-9 h-9'
         }`}
         style={{
           left: `${trailingPos.x}px`,
