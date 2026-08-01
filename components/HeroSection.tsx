@@ -4,7 +4,7 @@ import ThreeDToothCanvas from './3DToothCanvas';
 import { Calendar, ArrowRight, ShieldCheck, Star, Sparkles, Award, HeartPulse } from 'lucide-react';
 
 interface HeroSectionProps {
-  onOpenBooking: () => void;
+  onOpenBooking: (serviceName?: string) => void;
 }
 
 export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
@@ -47,7 +47,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
               {/* Primary CTA */}
               <button
-                onClick={onOpenBooking}
+                onClick={() => onOpenBooking()}
                 className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-dental-blue to-dental-mint text-white font-semibold text-base shadow-glow-blue hover:shadow-[0_0_35px_rgba(15,157,255,0.6)] hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 group"
               >
                 <Calendar className="w-5 h-5 text-amber-300 group-hover:rotate-12 transition-transform" />
