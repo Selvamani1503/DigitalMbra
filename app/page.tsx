@@ -38,16 +38,16 @@ export default function Home() {
       
       {/* Navigation Header */}
       <Header
-        onOpenBooking={() => handleOpenBooking()}
+        onOpenBooking={handleOpenBooking}
         darkMode={darkMode}
         setDarkMode={setDarkMode}
       />
 
       {/* Main Content Sections */}
       <main>
-        <HeroSection onOpenBooking={() => handleOpenBooking()} />
+        <HeroSection onOpenBooking={handleOpenBooking} />
         <AboutSection />
-        <ServicesSection onOpenBooking={(s) => handleOpenBooking(s)} />
+        <ServicesSection onOpenBooking={handleOpenBooking} />
         <WhyChooseUs />
         <ClinicGallery />
         <SmileComparisonGallery />
@@ -56,7 +56,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <Footer onOpenBooking={(s) => handleOpenBooking(s)} />
+      <Footer onOpenBooking={handleOpenBooking} />
 
       {/* Interactive Appointment Modal */}
       <BookingModal
@@ -66,7 +66,7 @@ export default function Home() {
       />
 
       {/* Floating WhatsApp Chat & Back to Top Widgets */}
-      <FloatingWidgets onOpenBooking={() => handleOpenBooking()} />
+      <FloatingWidgets onOpenBooking={handleOpenBooking} />
     </div>
   );
 }
