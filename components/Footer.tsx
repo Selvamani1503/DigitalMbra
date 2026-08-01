@@ -2,7 +2,7 @@
 
 import { Sparkles, Facebook, Instagram, MessageCircle, MapPin, Phone, Mail, Clock } from 'lucide-react';
 
-export default function Footer({ onOpenBooking }: { onOpenBooking: () => void }) {
+export default function Footer({ onOpenBooking }: { onOpenBooking: (serviceName?: string) => void }) {
   return (
     <footer className="bg-slate-900 text-white relative overflow-hidden border-t border-white/10 pt-16 pb-12">
       {/* Ambient background glow */}
