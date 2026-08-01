@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { MessageCircle, ArrowUp } from 'lucide-react';
 
-export default function FloatingWidgets({ onOpenBooking }: { onOpenBooking: () => void }) {
+export default function FloatingWidgets({ onOpenBooking }: { onOpenBooking: (serviceName?: string) => void }) {
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
