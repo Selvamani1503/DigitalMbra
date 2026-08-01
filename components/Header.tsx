@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Sun, Moon, Calendar, Menu, X, Sparkles, PhoneCall } from 'lucide-react';
 
 interface HeaderProps {
-  onOpenBooking: () => void;
+  onOpenBooking: (serviceName?: string) => void;
   darkMode: boolean;
   setDarkMode: (val: boolean | ((prev: boolean) => boolean)) => void;
 }
@@ -95,7 +95,7 @@ export default function Header({ onOpenBooking, darkMode, setDarkMode }: HeaderP
 
           {/* Book Appointment CTA Button */}
           <button
-            onClick={onOpenBooking}
+            onClick={() => onOpenBooking()}
             className="relative group overflow-hidden rounded-xl bg-gradient-to-r from-dental-blue to-dental-mint p-px font-semibold shadow-glow-blue hover:shadow-[0_0_30px_rgba(15,157,255,0.6)] transition-all duration-300 hover:scale-105 active:scale-95"
           >
             <div className="relative flex items-center gap-2 px-5 py-2.5 rounded-[11px] bg-dental-blue hover:bg-transparent text-white text-sm font-semibold transition-all duration-300">
